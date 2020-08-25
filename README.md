@@ -3,10 +3,11 @@ Marlin Firmware to get Creality v4.2.7 boards working perfectly
 
 Steps to help anybody that needs to get this board working ok
 
-Download bugfix from git hub https://github.com/MarlinFirmware/Marlin/archive/bugfix-2.0.x.zip
+Download bugfix from git hub https://github.com/MarlinFirmware/Marlin/archive/bugfix-2.0.x.zip\
+Download Configuration exemples: https://github.com/MarlinFirmware/Configurations/archive/bugfix-2.0.x.zip
 
 ## In 
-Change:   default_envs = STM32F103RET6_creality
+Change:   default_envs = mega2560\
 To:       default_envs = STM32F103RET6_creality
 
 ## In Configuration.h
