@@ -5,6 +5,10 @@ Steps to help anybody that needs to get this board working ok
 
 Download bugfix from git hub https://github.com/MarlinFirmware/Marlin/archive/bugfix-2.0.x.zip
 
+## In 
+Change:   default_envs = STM32F103RET6_creality
+To:       default_envs = STM32F103RET6_creality
+
 ## In Configuration.h
 
 Change:   #define MOTHERBOARD BOARD_CREALITY_V4\
