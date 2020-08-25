@@ -43,7 +43,7 @@ To:       #define AUTO_BED_LEVELING_BILINEAR
 Change:   //#define LCD_BED_LEVELING\
 To:       #define LCD_BED_LEVELING
 
-Change: //#define Z_SAFE_HOMING
+Change: //#define Z_SAFE_HOMING\
 To:     #define Z_SAFE_HOMING
 
 ### In my case using runout_sensor
@@ -77,5 +77,8 @@ In Auto Build Marlin at Visual Studio, click on Build botton and wait for the gr
 1 succeeded in 00:00:26.355
 
 # Where is the firmware I've compilled
-In my case: C:\Marlin-bugfix-2.0.x\.pio\build\STM32F103RET6_creality
-In your case: somedir\Marlin-bugfix-2.0.x\.pio\build\STM32F103RET6_creality
+In my case: C:\creality-v4.2.7-marlin-2.0.6-bugfix\Marlin-bugfix-2.0.x\.pio\build\STM32F103RET6_creality
+In your case: somedir\.pio\build\STM32F103RET6_creality
+
+# Paypal if you feel I helped you in a fair way
+My ID flawioo@hotmail.com
