@@ -43,6 +43,9 @@ To:       #define AUTO_BED_LEVELING_BILINEAR
 Change:   //#define LCD_BED_LEVELING\
 To:       #define LCD_BED_LEVELING
 
+Change: //#define Z_SAFE_HOMING
+To:     #define Z_SAFE_HOMING
+
 ### In my case using runout_sensor
 
 Change:   //#define FILAMENT_RUNOUT_SENSOR\
