@@ -25,14 +25,13 @@ or\
 Change:   //#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default\
 To:       #define Z_MIN_PROBE_PIN 17   // Creality V4.2.7 BLTouch OUT (written on the board)
 
-/** Pinout on board and respective connections 
+Pinout on board (5 pins named as BL_T) and respective connections 
 *   Board-----BLTouch wires
 *   G---------Green----Servo
 *   V---------Red------Servo
 *   IN--------Yellow---Servo
 *   G---------White----Probe (if it doesn't work, try to swap with Black)
 *   OUT-------Black----Probe (if you are using Z_MIN_PROBE_PIN 17, if you don't, please just uncomment Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN as above)
-*/
 
 Change:   //#define BLTOUCH\
 To:       #define BLTOUCH
