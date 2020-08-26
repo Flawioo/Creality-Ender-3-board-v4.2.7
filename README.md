@@ -7,7 +7,7 @@ Download bugfix from git hub https://github.com/MarlinFirmware/Marlin/archive/bu
 
 Download Configuration exemples: https://github.com/MarlinFirmware/Configurations/archive/bugfix-2.0.x.zip
 
-## In 
+## In platformio.ini
 Change:   default_envs = mega2560\
 To:       default_envs = STM32F103RET6_creality
 
