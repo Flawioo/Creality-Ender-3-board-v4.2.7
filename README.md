@@ -85,7 +85,7 @@ In Auto Build Marlin at Visual Studio, click on Build botton and wait for the gr
 1 succeeded in 00:00:26.355
 
 # Where is the firmware I've compilled
-In my case: C:\creality-v4.2.7-marlin-2.0.6-bugfix\Marlin-bugfix-2.0.x\.pio\build\STM32F103RET6_creality
+In my case: C:\creality-v4.2.7-marlin-2.0.6-bugfix\Marlin-bugfix-2.0.x\.pio\build\STM32F103RET6_creality\
 In your case: somedir\.pio\build\STM32F103RET6_creality
 
 # Paypal if you feel I helped you in a fair way
