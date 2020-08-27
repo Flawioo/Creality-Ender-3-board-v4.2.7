@@ -88,5 +88,7 @@ In Auto Build Marlin at Visual Studio, click on Build botton and wait for the gr
 In my case: C:\creality-v4.2.7-marlin-2.0.6-bugfix\Marlin-bugfix-2.0.x\.pio\build\STM32F103RET6_creality\
 In your case: somedir\.pio\build\STM32F103RET6_creality
 
+Download compiled: https://github.com/Flawioo/Creality-Ender-3-board-v4.2.7/blob/master/firmware-20200825-161146-BLT-and_Runnout-filament.bin
+
 # Paypal if you feel I helped you in a fair way
 My ID flawioo@hotmail.com
