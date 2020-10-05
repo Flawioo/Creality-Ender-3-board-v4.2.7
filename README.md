@@ -14,19 +14,20 @@ To:       default_envs = STM32F103RET6_creality
 ## In Configuration.h
 
 ###### Simplest firmware
-'
- #define MOTHERBOARD BOARD_CREALITY_V427
+```
+#define MOTHERBOARD BOARD_CREALITY_V427
 
 #define CUSTOM_MACHINE_NAME "Ender-3 32bits" // Or any name you'd like to
-'
+```
 
-### BLTouch enabling
+###### BLTouch enabling
 
-Change:   //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN\
-To:       #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN // Enable BLTouch probe pins (white and black wires) to be connected to Z-\
+```
+#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN // Enable BLTouch probe pins (white and black wires) to be connected to Z-\
 or\
 Change:   //#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default\
 To:       #define Z_MIN_PROBE_PIN 17   // Creality V4.2.7 BLTouch OUT (written on the board)
+```
 
 Pinout on board (5 pins named as BL_T) and respective connections 
 *   Board-----BLTouch wires
@@ -36,26 +37,22 @@ Pinout on board (5 pins named as BL_T) and respective connections
 *   G---------White----Probe (if it doesn't work, try to swap with Black)
 *   OUT-------Black----Probe (if you are using Z_MIN_PROBE_PIN 17, if you don't, please just uncomment Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN as above)
 
-Change:   //#define BLTOUCH\
-To:       #define BLTOUCH
+```
+#define BLTOUCH
 
-Change:   #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }\
-To:       #define NOZZLE_TO_PROBE_OFFSET { -40, -10, 0 } // Using this thingfile as mount, measure correctly using your mounted BLTouch https://www.thingiverse.com/thing:3003725
+#define NOZZLE_TO_PROBE_OFFSET { -40, -10, 0 } // Using this thingfile as mount, measure correctly using your mounted BLTouch https://www.thingiverse.com/thing:3003725
 
-Change:   #define PROBING_MARGIN 10\
-To:       #define PROBING_MARGIN 15 // If you'd want stay away from the edges (higher values goes to center of the bed)
+#define PROBING_MARGIN 15 // If you'd want stay away from the edges (higher values goes to center of the bed)
 
-Change:   #define MIN_SOFTWARE_ENDSTOP_Z\
-To:       //#define MIN_SOFTWARE_ENDSTOP_Z // To allow to set Z offset values in negative
+//#define MIN_SOFTWARE_ENDSTOP_Z // To allow to set Z offset values in negative
 
-Change:   //#define AUTO_BED_LEVELING_BILINEAR\
-To:       #define AUTO_BED_LEVELING_BILINEAR
+#define AUTO_BED_LEVELING_BILINEAR
 
-Change:   //#define LCD_BED_LEVELING\
-To:       #define LCD_BED_LEVELING
+#define LCD_BED_LEVELING
 
-Change: //#define Z_SAFE_HOMING\
-To:     #define Z_SAFE_HOMING
+#define Z_SAFE_HOMING
+
+###### Runout Filament Enabling
 
 ### In my case using runout_sensor
 
