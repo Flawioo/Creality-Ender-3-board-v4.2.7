@@ -55,16 +55,13 @@ Pinout on board (5 pins named as BL_T) and respective connections
 ###### Runout Filament Enabling
 
 ### In my case using runout_sensor
+```
+#define FILAMENT_RUNOUT_SENSOR
 
-Change:   //#define FILAMENT_RUNOUT_SENSOR\
-To:       #define FILAMENT_RUNOUT_SENSOR
+#define NOZZLE_PARK_FEATURE // To change filament
 
-Change:   //#define NOZZLE_PARK_FEATURE\
-To:       #define NOZZLE_PARK_FEATURE // To change filament
-
-Change:   #define NOZZLE_PARK_POINT { (X_MIN_POS + 10), (Y_MAX_POS - 10), 20 }\
-To:       #define NOZZLE_PARK_POINT { (X_MAX_POS - 10), (Y_MIN_POS + 10), 20 } // To change the position of the hotend in front on the right of the bed
-
+#define NOZZLE_PARK_POINT { (X_MAX_POS - 10), (Y_MIN_POS + 10), 20 } // To change the position of the hotend in front on the right of the bed
+```
 ## In Configuration_adv.h
 
 Change:   //#define BLTOUCH_DELAY 500\
