@@ -1,15 +1,15 @@
 # Creality-Ender-3-board-v4.2.7
-Marlin Firmware to get Creality v4.2.7 boards working perfectly
+Marlin 2.0.7 compiling proccess to Creality v4.2.7 board
 
 Steps to help anybody that needs to get this board working ok
 
-Download bugfix from git hub https://github.com/MarlinFirmware/Marlin/archive/bugfix-2.0.x.zip
+Download Marlin from git hub https://github.com/MarlinFirmware/Marlin/archive/2.0.x.zip
 
-Download Configuration exemples: https://github.com/MarlinFirmware/Configurations/archive/bugfix-2.0.x.zip
+Download Configuration exemples: https://github.com/MarlinFirmware/Configurations/archive/release-2.0.7.zip
 
 ## In platformio.ini (for any firmware version you'll compile)
-Change:   default_envs = mega2560\
-To:       default_envs = STM32F103RET6_creality
+
+`default_envs = STM32F103RET6_creality`
 
 ## In Configuration.h
 
