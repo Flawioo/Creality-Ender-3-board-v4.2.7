@@ -13,6 +13,8 @@ To:       default_envs = STM32F103RET6_creality
 
 ## In Configuration.h
 
+### Simplest firmware
+
 Change:   #define MOTHERBOARD BOARD_CREALITY_V4\
 To:       #define MOTHERBOARD BOARD_CREALITY_V427
 
