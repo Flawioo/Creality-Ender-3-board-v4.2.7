@@ -51,7 +51,7 @@ Pinout on board (5 pins named as BL_T) and respective connections
 #define LCD_BED_LEVELING
 
 #define Z_SAFE_HOMING
-
+```
 ###### Runout Filament Enabling
 
 ### In my case using runout_sensor
