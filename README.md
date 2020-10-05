@@ -7,19 +7,20 @@ Download bugfix from git hub https://github.com/MarlinFirmware/Marlin/archive/bu
 
 Download Configuration exemples: https://github.com/MarlinFirmware/Configurations/archive/bugfix-2.0.x.zip
 
-## In platformio.ini
+## In platformio.ini (for any firmware version you'll compile)
 Change:   default_envs = mega2560\
 To:       default_envs = STM32F103RET6_creality
 
 ## In Configuration.h
 
-### Simplest firmware
+###### Simplest firmware
+'
+ #define MOTHERBOARD BOARD_CREALITY_V427
 
-Change:   #define MOTHERBOARD BOARD_CREALITY_V4\
-To:       #define MOTHERBOARD BOARD_CREALITY_V427
+#define CUSTOM_MACHINE_NAME "Ender-3 32bits" // Or any name you'd like to
+'
 
-Change:   #define CUSTOM_MACHINE_NAME "Ender-3 Pro V1.5"\
-To:       #define CUSTOM_MACHINE_NAME "Ender-3 32bits" // Or any name you'd like to
+### BLTouch enabling
 
 Change:   //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN\
 To:       #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN // Enable BLTouch probe pins (white and black wires) to be connected to Z-\
