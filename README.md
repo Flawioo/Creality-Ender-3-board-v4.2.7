@@ -54,7 +54,6 @@ Pinout on board (5 pins named as BL_T) and respective connections
 ```
 ###### Runout Filament Enabling
 
-### In my case using runout_sensor
 ```
 #define FILAMENT_RUNOUT_SENSOR
 
@@ -63,20 +62,14 @@ Pinout on board (5 pins named as BL_T) and respective connections
 #define NOZZLE_PARK_POINT { (X_MAX_POS - 10), (Y_MIN_POS + 10), 20 } // To change the position of the hotend in front on the right of the bed
 ```
 ## In Configuration_adv.h
+```
+#define BLTOUCH_DELAY 500
 
-Change:   //#define BLTOUCH_DELAY 500\
-To:       #define BLTOUCH_DELAY 500
+#define ADVANCED_PAUSE_FEATURE
 
-Change:   //#define ADVANCED_PAUSE_FEATURE\
-To:       #define ADVANCED_PAUSE_FEATURE
-
-Change:   //#define PARK_HEAD_ON_PAUSE  // Park the nozzle during pause and filament change.\
-To:       #define PARK_HEAD_ON_PAUSE    // Park the nozzle during pause and filament change.
-
-Change:   //#define PINS_DEBUGGING // M43 - display pin status, toggle pins, watch pins, watch endstops & toggle LED, test servo probe
-To:       #define PINS_DEBUGGING   // Only if you'd like to discover new features, if you don't, don't let it as it is
-
-# Compile
+#define PARK_HEAD_ON_PAUSE    // Park the nozzle during pause and filament change.
+```
+## Compile
 
 In Auto Build Marlin at Visual Studio, click on Build botton and wait for the green line\\
 1 succeeded in 00:00:26.355
