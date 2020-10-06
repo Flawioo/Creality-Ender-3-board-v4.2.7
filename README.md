@@ -79,10 +79,22 @@ In my case: C:\Marlin-2.0.7\Marlin-2.0.x\.pio\build\STM32F103RET6_creality\
 In your case: somedir\.pio\build\STM32F103RET6_creality
 
 # Easiest Download compiled my friend:
-Simplest: https://github.com/Flawioo/Creality-Ender-3-board-v4.2.7/raw/Marlin-2.0.7/firmware-20201005-165416-Simplest.bin\\
-BLTouch on -Z: https://github.com/Flawioo/Creality-Ender-3-board-v4.2.7/raw/Marlin-2.0.7/firmware-20201005-173413-BLTouch_using_probe_connected_to_-Z%20pins.bin\\
-BLTouch on BL_T (5 pins): https://github.com/Flawioo/Creality-Ender-3-board-v4.2.7/raw/Marlin-2.0.7/firmware-20201005-174810-BLTouch_using_5pins_of_BL_T_connector.bin\\
-Most Complete: https://github.com/Flawioo/Creality-Ender-3-board-v4.2.7/raw/Marlin-2.0.7/firmware-20201005-180711-Simplest%2BBLTouch%2BRunout%2BFilChange.bin
+
+**Simplest**
+
+https://github.com/Flawioo/Creality-Ender-3-board-v4.2.7/raw/Marlin-2.0.7/firmware-20201005-165416-Simplest.bin
+
+**BLTouch on -Z**
+
+https://github.com/Flawioo/Creality-Ender-3-board-v4.2.7/raw/Marlin-2.0.7/firmware-20201005-173413-BLTouch_using_probe_connected_to_-Z%20pins.bin
+
+**BLTouch on BL_T (5 pins)**
+
+https://github.com/Flawioo/Creality-Ender-3-board-v4.2.7/raw/Marlin-2.0.7/firmware-20201005-174810-BLTouch_using_5pins_of_BL_T_connector.bin
+
+**Most Complete**
+
+https://github.com/Flawioo/Creality-Ender-3-board-v4.2.7/raw/Marlin-2.0.7/firmware-20201005-180711-Simplest%2BBLTouch%2BRunout%2BFilChange.bin
 
 # Paypal if you feel I helped you in a fair way
 My ID flawioo@hotmail.com
