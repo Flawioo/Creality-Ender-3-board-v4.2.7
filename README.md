@@ -22,20 +22,25 @@ Download Configuration exemples: https://github.com/MarlinFirmware/Configuration
 
 ###### BLTouch enabling
 
-```
-#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN // Enable BLTouch probe pins (white and black wires) to be connected to Z-\
-or\
-Change:   //#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default\
-To:       #define Z_MIN_PROBE_PIN 17   // Creality V4.2.7 BLTouch OUT (written on the board)
-```
+If you want to use 5 pins of BL_T connector\
+Let the following line commented
 
-Pinout on board (5 pins named as BL_T) and respective connections 
+`//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN`
+
+**OR**
+
+If you want to connect BLTouch probe pins (white and black wires) to be connected to Z-\
+
+`#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN`
+
+
+Pinout on board (5 pins named as BL_T) and respective connections
 *   Board-----BLTouch wires
 *   G---------Green----Servo
 *   V---------Red------Servo
 *   IN--------Yellow---Servo
 *   G---------White----Probe (if it doesn't work, try to swap with Black)
-*   OUT-------Black----Probe (if you are using Z_MIN_PROBE_PIN 17, if you don't, please just uncomment Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN as above)
+*   OUT-------Black----Probe (enabled if the parameter is equal `//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN` as above)
 
 ```
 #define BLTOUCH
