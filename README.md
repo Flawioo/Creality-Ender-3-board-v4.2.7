@@ -9,7 +9,10 @@ Download Configuration exemples: https://github.com/MarlinFirmware/Configuration
 
 ## In platformio.ini
 Change:   default_envs = mega2560\
-To:       default_envs = STM32F103RET6_creality
+To:       default_envs = STM32F103RET6_creality <-------This is outdated
+
+Correction would be
+          default_envs = STM32F103RE_creality <---------This is the current updated 
 
 ## In Configuration.h
 
